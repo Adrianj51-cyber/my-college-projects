@@ -7,7 +7,10 @@
 <title>College Technology Projects</title>
 
 <style>
-* { box-sizing: border-box; scroll-behavior: smooth; }
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
 
 body {
     margin: 0;
@@ -29,7 +32,9 @@ header h1 {
     margin-bottom: 10px;
 }
 
-header p { color: #dbeafe; }
+header p {
+    color: #dbeafe;
+}
 
 nav {
     position: sticky;
@@ -49,7 +54,9 @@ nav a {
     font-weight: bold;
 }
 
-nav a:hover { color: white; }
+nav a:hover {
+    color: white;
+}
 
 main {
     max-width: 1100px;
@@ -65,8 +72,13 @@ section {
     margin-bottom: 30px;
 }
 
-h2 { color: #60a5fa; }
-h3 { color: #93c5fd; }
+h2 {
+    color: #60a5fa;
+}
+
+h3 {
+    color: #93c5fd;
+}
 
 .hero-button {
     display: inline-block;
@@ -79,7 +91,9 @@ h3 { color: #93c5fd; }
     font-weight: bold;
 }
 
-.hero-button:hover { background: #1d4ed8; }
+.hero-button:hover {
+    background: #1d4ed8;
+}
 
 .cards {
     display: grid;
@@ -113,8 +127,13 @@ th, td {
     text-align: left;
 }
 
-th { background: #1e3a5f; }
-tr:nth-child(even) { background: #1b2d46; }
+th {
+    background: #1e3a5f;
+}
+
+tr:nth-child(even) {
+    background: #1b2d46;
+}
 
 .agent {
     background: #1b2d46;
@@ -147,48 +166,65 @@ footer {
     background: #091120;
 }
 
-.note { color: #fbbf24; }
+.note {
+    color: #fbbf24;
+}
 
 @media(max-width: 650px) {
-    header h1 { font-size: 30px; }
-    table { font-size: 13px; }
-    th, td { padding: 8px; }
-    section { padding: 18px; }
+    header h1 {
+        font-size: 30px;
+    }
+
+    table {
+        font-size: 13px;
+    }
+
+    th, td {
+        padding: 8px;
+    }
+
+    section {
+        padding: 18px;
+    }
 }
 </style>
 </head>
 
 <body>
 
-<header>
+<header id="home">
     <h1>My College Technology Projects</h1>
-    <p>Computer Hardware Evaluation & AI Movie Agent</p>
+    <p>Computer Hardware, AI Movie Agent & Software Applications</p>
     <p>Exploring technology, computer systems, and artificial intelligence.</p>
+
     <a class="hero-button" href="#hardware">Hardware Assignment</a>
     <a class="hero-button" href="#movie">AI Movie Assignment</a>
+    <a class="hero-button" href="software.html">Programs & Apps</a>
 </header>
 
 <nav>
     <a href="#home">Home</a>
     <a href="#hardware">Hardware Evaluation</a>
     <a href="#movie">AI Movie Agent</a>
+    <a href="software.html">Programs & Apps</a>
 </nav>
 
 <main>
 
 <!-- HOME -->
 
-<section id="home">
+<section id="welcome">
     <h2>Welcome to My Projects</h2>
+
     <p>
         Welcome to my college technology project website. This website
-        contains two assignments that explore different areas of technology.
-        The first assignment focuses on evaluating important computer
-        hardware components. The second assignment explores how artificial
-        intelligence can be used to plan and create a short movie.
+        contains assignments that explore different areas of technology.
+        The projects include computer hardware, artificial intelligence,
+        and software applications.
     </p>
 
     <div class="cards">
+
         <div class="card">
             <h3>Assignment 4</h3>
             <p><strong>Hardware Evaluation</strong></p>
@@ -202,16 +238,26 @@ footer {
             <p>Explore an AI workflow that turns a movie idea into a planned short film.</p>
             <a class="hero-button" href="#movie">View Assignment</a>
         </div>
+
+        <div class="card">
+            <h3>Assignment 5</h3>
+            <p><strong>Programs and Apps</strong></p>
+            <p>Explore system software, application software, and five software applications used in everyday life.</p>
+            <a class="hero-button" href="software.html">View Assignment</a>
+        </div>
+
     </div>
 </section>
 
 <!-- HARDWARE ASSIGNMENT -->
 
 <section id="hardware">
+
     <h2>Assignment 4: Hardware Evaluation</h2>
     <p><strong>Related Chapter:</strong> Chapter 3 – Evaluating Hardware</p>
 
     <h3>Introduction</h3>
+
     <p>
         Computer hardware is made up of physical parts that work together
         to make a computer function. Each component has a different job,
@@ -255,6 +301,7 @@ footer {
     <h3>Hardware Components Explained</h3>
 
     <div class="cards">
+
         <div class="card">
             <img src="https://images.unsplash.com/photo-1555617981-dac3880eac6e?w=700" alt="Computer processor">
             <h3>1. CPU – Processor</h3>
@@ -296,9 +343,11 @@ footer {
                 and other tasks that require detailed images and video.
             </p>
         </div>
+
     </div>
 
     <h3>Conclusion</h3>
+
     <p>
         All four hardware components play an important role in a computer.
         The CPU processes instructions, RAM helps programs run smoothly,
@@ -310,14 +359,17 @@ footer {
     </p>
 
     <p><a href="#home">Back to top ↑</a></p>
+
 </section>
 
 <!-- AI MOVIE ASSIGNMENT -->
 
 <section id="movie">
+
     <h2>Homework 4: AI Movie Agent</h2>
 
     <h3>1. Project Overview</h3>
+
     <p>
         The goal of this project is to create an AI Agent workflow that takes
         a movie idea and turns it into a short film. The workflow uses multiple
@@ -337,6 +389,7 @@ footer {
     <p><strong>Planned Length:</strong> Approximately 3–5 minutes</p>
 
     <h3>2. AI Agent Workflow</h3>
+
     <p>
         Each agent has a specific responsibility. The agents pass their
         results to the next stage so the project can move from an idea
@@ -355,6 +408,7 @@ footer {
     <p><strong>Title:</strong> One More Play</p>
 
     <p><strong>Story Summary:</strong></p>
+
     <p>
         A high school football player named Marcus is struggling with pressure,
         injuries, and doubts about his future. After a difficult practice,
@@ -365,6 +419,7 @@ footer {
     </p>
 
     <h3>Main Characters</h3>
+
     <ul>
         <li><strong>Marcus:</strong> A determined young football player who wants to prove himself.</li>
         <li><strong>Coach Daniels:</strong> A supportive coach who teaches Marcus about discipline and perseverance.</li>
@@ -372,35 +427,20 @@ footer {
     </ul>
 
     <h3>Scene 1 – The Pressure</h3>
-    <p>
-        Marcus sits alone in the locker room after a difficult practice.
-        He looks down at his football equipment and wonders if all the
-        hard work is worth it.
-    </p>
+    <p>Marcus sits alone in the locker room after a difficult practice. He looks down at his football equipment and wonders if all the hard work is worth it.</p>
     <p><strong>Marcus:</strong> "I don't know if I can keep doing this."</p>
 
     <h3>Scene 2 – The Conversation</h3>
-    <p>
-        Coach Daniels walks into the locker room and notices Marcus sitting
-        by himself. He sits next to him and reminds him why he started playing.
-    </p>
+    <p>Coach Daniels walks into the locker room and notices Marcus sitting by himself. He sits next to him and reminds him why he started playing.</p>
     <p><strong>Coach Daniels:</strong> "You think being strong means never struggling. It doesn't. It means getting back up when things get difficult."</p>
 
     <h3>Scene 3 – The Work</h3>
-    <p>
-        Marcus returns to practice. He runs drills, works with his teammates,
-        and pushes through difficult moments. Jordan encourages him during
-        the workout.
-    </p>
+    <p>Marcus returns to practice. He runs drills, works with his teammates, and pushes through difficult moments. Jordan encourages him during the workout.</p>
     <p><strong>Jordan:</strong> "Come on, we've got one more rep!"</p>
     <p><strong>Marcus:</strong> "Let's get it done."</p>
 
     <h3>Scene 4 – One More Play</h3>
-    <p>
-        During an important game, Marcus gets another opportunity.
-        The team lines up, the ball is snapped, and Marcus helps make
-        a crucial block that allows his teammate to score.
-    </p>
+    <p>During an important game, Marcus gets another opportunity. The team lines up, the ball is snapped, and Marcus helps make a crucial block that allows his teammate to score.</p>
     <p><strong>Coach Daniels:</strong> "That's what happens when you don't give up!"</p>
 
     <h3>Ending</h3>
@@ -456,6 +496,7 @@ footer {
     </div>
 
     <h3>5. AI Video Generation Prompts</h3>
+
     <p>
         The following prompts can be entered into an AI video-generation
         platform such as Google Veo, Runway, or Kling. Each clip should
@@ -475,6 +516,7 @@ footer {
     <pre>A dramatic American football game in a packed high school stadium at night. A young offensive lineman makes a powerful block to help his teammate score. Slow motion action, bright stadium lights, excited crowd, teammates celebrating together, cinematic camera movement, realistic football action, inspirational ending.</pre>
 
     <h3>6. Audio Plan</h3>
+
     <ul>
         <li><strong>Voices:</strong> Marcus, Coach Daniels, and Jordan will have separate dialogue voices.</li>
         <li><strong>Background Music:</strong> Emotional music during the opening and inspirational music during the training and final game.</li>
@@ -483,9 +525,11 @@ footer {
     </ul>
 
     <h3>Audio Generation Prompt</h3>
+
     <pre>Create audio for a realistic inspirational football short film. Use natural conversational voices for a young football player, his teammate, and an experienced coach. Begin with quiet emotional background music. Add realistic locker-room ambience, football practice sounds, whistles, footsteps, helmet and shoulder-pad impacts, and stadium crowd cheering. Build into uplifting cinematic music during the final scene.</pre>
 
     <h3>7. Movie Editing Plan</h3>
+
     <ol>
         <li>Import the generated video clips into a video editor.</li>
         <li>Arrange the scenes in the correct story order.</li>
@@ -499,6 +543,7 @@ footer {
     </ol>
 
     <h3>8. Final Movie Submission</h3>
+
     <p>
         The final movie will combine the generated scenes, dialogue,
         music, sound effects, and transitions into one short film.
@@ -506,14 +551,15 @@ footer {
     </p>
 
     <p class="note">
-        Submission status: The movie still needs to be generated, edited,
-        and uploaded. The prompts and production plan above are prepared
-        for that process.
+        Submission status: The movie still needs to be generated,
+        edited, and uploaded. The prompts and production plan above
+        are prepared for that process.
     </p>
 
     <p><strong>Final Movie Link:</strong> Add your Google Drive or YouTube link here after uploading the completed movie.</p>
 
     <h3>Conclusion</h3>
+
     <p>
         This project demonstrates how an AI Agent workflow can take a
         simple idea and organize it into a movie-production process.
@@ -524,23 +570,33 @@ footer {
     </p>
 
     <p><a href="#home">Back to top ↑</a></p>
+
+</section>
+
+<!-- ASSIGNMENT 5 LINK -->
+
+<section id="assignment5">
+    <h2>Assignment 5: Programs and Apps</h2>
+
+    <p><strong>Related Chapter:</strong> Chapter 4 – Programs and Apps</p>
+
+    <p>
+        This assignment explores system software, application software,
+        and five software applications used in everyday life.
+    </p>
+
+    <a class="hero-button" href="software.html">Open Assignment 5</a>
+
+    <p><a href="#home">Back to top ↑</a></p>
 </section>
 
 </main>
 
 <footer>
-    <p>College Technology Projects | Hardware Evaluation & AI Movie Agent</p>
+    <p>College Technology Projects</p>
+    <p>Hardware Evaluation | AI Movie Agent | Programs and Apps</p>
 </footer>
 
 </body>
 </html>
-<section class="video-project">
-    <h2>One More Play</h2>
-    <p>A football story about brotherhood, teamwork, and never giving up.</p>
 
-    <video controls width="100%">
-        <source src="videos/one-more-play.mp4" type="video/mp4">
-        Your browser does not support video playback.
-    </video>
-</section>
-<a href="software.html">Assignment 5: Programs and Apps</a>
