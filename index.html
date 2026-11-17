@@ -1,0 +1,536 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>College Technology Projects</title>
+
+<style>
+* { box-sizing: border-box; scroll-behavior: smooth; }
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0b1425;
+    color: #f1f5f9;
+    line-height: 1.7;
+}
+
+header {
+    text-align: center;
+    padding: 65px 20px;
+    background: linear-gradient(135deg, #142746, #1e3a5f);
+}
+
+header h1 {
+    font-size: 42px;
+    color: #93c5fd;
+    margin-bottom: 10px;
+}
+
+header p { color: #dbeafe; }
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: #091120;
+    padding: 17px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+nav a {
+    color: #93c5fd;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover { color: white; }
+
+main {
+    max-width: 1100px;
+    margin: auto;
+    padding: 30px 20px;
+}
+
+section {
+    background: #142238;
+    border: 1px solid #263b59;
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 30px;
+}
+
+h2 { color: #60a5fa; }
+h3 { color: #93c5fd; }
+
+.hero-button {
+    display: inline-block;
+    background: #2563eb;
+    color: white;
+    padding: 12px 22px;
+    border-radius: 7px;
+    text-decoration: none;
+    margin: 8px;
+    font-weight: bold;
+}
+
+.hero-button:hover { background: #1d4ed8; }
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: #1b2d46;
+    padding: 18px;
+    border-radius: 10px;
+}
+
+.card img {
+    width: 100%;
+    height: 160px;
+    object-fit: contain;
+    background: white;
+    border-radius: 7px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 18px;
+}
+
+th, td {
+    border: 1px solid #42536b;
+    padding: 13px;
+    text-align: left;
+}
+
+th { background: #1e3a5f; }
+tr:nth-child(even) { background: #1b2d46; }
+
+.agent {
+    background: #1b2d46;
+    border-left: 4px solid #60a5fa;
+    padding: 15px;
+    margin: 12px 0;
+    border-radius: 6px;
+}
+
+.scene {
+    background: #1b2d46;
+    padding: 18px;
+    margin: 15px 0;
+    border-radius: 8px;
+}
+
+pre {
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+    background: #091120;
+    color: #dbeafe;
+    padding: 18px;
+    border-radius: 8px;
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    color: #94a3b8;
+    background: #091120;
+}
+
+.note { color: #fbbf24; }
+
+@media(max-width: 650px) {
+    header h1 { font-size: 30px; }
+    table { font-size: 13px; }
+    th, td { padding: 8px; }
+    section { padding: 18px; }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>My College Technology Projects</h1>
+    <p>Computer Hardware Evaluation & AI Movie Agent</p>
+    <p>Exploring technology, computer systems, and artificial intelligence.</p>
+    <a class="hero-button" href="#hardware">Hardware Assignment</a>
+    <a class="hero-button" href="#movie">AI Movie Assignment</a>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#hardware">Hardware Evaluation</a>
+    <a href="#movie">AI Movie Agent</a>
+</nav>
+
+<main>
+
+<!-- HOME -->
+
+<section id="home">
+    <h2>Welcome to My Projects</h2>
+    <p>
+        Welcome to my college technology project website. This website
+        contains two assignments that explore different areas of technology.
+        The first assignment focuses on evaluating important computer
+        hardware components. The second assignment explores how artificial
+        intelligence can be used to plan and create a short movie.
+    </p>
+
+    <div class="cards">
+        <div class="card">
+            <h3>Assignment 4</h3>
+            <p><strong>Hardware Evaluation</strong></p>
+            <p>Learn about the CPU, RAM, SSD, and GPU and understand why each component matters.</p>
+            <a class="hero-button" href="#hardware">View Assignment</a>
+        </div>
+
+        <div class="card">
+            <h3>Homework 4</h3>
+            <p><strong>AI Movie Agent</strong></p>
+            <p>Explore an AI workflow that turns a movie idea into a planned short film.</p>
+            <a class="hero-button" href="#movie">View Assignment</a>
+        </div>
+    </div>
+</section>
+
+<!-- HARDWARE ASSIGNMENT -->
+
+<section id="hardware">
+    <h2>Assignment 4: Hardware Evaluation</h2>
+    <p><strong>Related Chapter:</strong> Chapter 3 – Evaluating Hardware</p>
+
+    <h3>Introduction</h3>
+    <p>
+        Computer hardware is made up of physical parts that work together
+        to make a computer function. Each component has a different job,
+        and choosing the right hardware can affect a computer's speed,
+        performance, storage, and overall experience. This assignment
+        evaluates four important hardware components: the CPU, RAM, SSD,
+        and GPU.
+    </p>
+
+    <h3>Hardware Comparison Table</h3>
+    <p>The table explains what each component does and why it is important.</p>
+
+    <table>
+        <tr>
+            <th>Component</th>
+            <th>Description</th>
+            <th>Importance</th>
+        </tr>
+        <tr>
+            <td>CPU</td>
+            <td>The Central Processing Unit processes instructions and performs calculations.</td>
+            <td>It controls many computer operations and affects overall performance.</td>
+        </tr>
+        <tr>
+            <td>RAM</td>
+            <td>Random Access Memory temporarily stores information that programs are currently using.</td>
+            <td>More RAM helps a computer run multiple programs and tasks smoothly.</td>
+        </tr>
+        <tr>
+            <td>SSD</td>
+            <td>A Solid State Drive stores files, programs, and the operating system using flash memory.</td>
+            <td>It helps a computer start faster and load files and applications more quickly.</td>
+        </tr>
+        <tr>
+            <td>GPU</td>
+            <td>The Graphics Processing Unit handles graphics, images, videos, and visual calculations.</td>
+            <td>It is important for gaming, video editing, graphic design, and other demanding visual tasks.</td>
+        </tr>
+    </table>
+
+    <h3>Hardware Components Explained</h3>
+
+    <div class="cards">
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1555617981-dac3880eac6e?w=700" alt="Computer processor">
+            <h3>1. CPU – Processor</h3>
+            <p>
+                The CPU is often called the brain of the computer. It handles
+                instructions from programs and performs calculations. A faster
+                processor can help a computer complete tasks more efficiently.
+            </p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1562976540-1502c2145186?w=700" alt="Computer memory">
+            <h3>2. RAM – Memory</h3>
+            <p>
+                RAM temporarily holds information that the computer needs
+                right away. It allows users to switch between applications
+                and keep multiple tasks running. RAM does not permanently
+                save information when the computer is turned off.
+            </p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?w=700" alt="Computer storage drive">
+            <h3>3. SSD – Storage</h3>
+            <p>
+                An SSD saves files, applications, and the operating system.
+                Unlike older hard drives, SSDs have no moving parts and can
+                access stored information quickly. This makes computers
+                faster when starting up and opening programs.
+            </p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1591488320449-011701bb6704?w=700" alt="Graphics card">
+            <h3>4. GPU – Graphics Card</h3>
+            <p>
+                The GPU processes graphics and visual information. It is
+                especially useful for gaming, video editing, animation,
+                and other tasks that require detailed images and video.
+            </p>
+        </div>
+    </div>
+
+    <h3>Conclusion</h3>
+    <p>
+        All four hardware components play an important role in a computer.
+        The CPU processes instructions, RAM helps programs run smoothly,
+        the SSD stores information, and the GPU handles graphics. When
+        evaluating a computer, it is important to understand what each
+        component does and how it affects the user's needs. Choosing the
+        right combination of hardware can improve performance and make
+        a computer more useful for school, work, gaming, and creative projects.
+    </p>
+
+    <p><a href="#home">Back to top ↑</a></p>
+</section>
+
+<!-- AI MOVIE ASSIGNMENT -->
+
+<section id="movie">
+    <h2>Homework 4: AI Movie Agent</h2>
+
+    <h3>1. Project Overview</h3>
+    <p>
+        The goal of this project is to create an AI Agent workflow that takes
+        a movie idea and turns it into a short film. The workflow uses multiple
+        stages, including planning, writing, character development,
+        storyboarding, video generation, audio, and editing.
+    </p>
+
+    <p>
+        My movie idea is a short inspirational sports drama about a young
+        football player who faces challenges but learns that hard work,
+        teamwork, and determination can help him reach his goals.
+    </p>
+
+    <p><strong>Movie Title:</strong> One More Play</p>
+    <p><strong>Genre:</strong> Sports drama / Inspirational</p>
+    <p><strong>Target Audience:</strong> Teenagers, students, athletes, and sports fans</p>
+    <p><strong>Planned Length:</strong> Approximately 3–5 minutes</p>
+
+    <h3>2. AI Agent Workflow</h3>
+    <p>
+        Each agent has a specific responsibility. The agents pass their
+        results to the next stage so the project can move from an idea
+        to a finished movie.
+    </p>
+
+    <div class="agent"><strong>1. Director Agent:</strong> Receives the movie idea and decides the genre, audience, tone, and direction.</div>
+    <div class="agent"><strong>2. Scriptwriting Agent:</strong> Creates the title, story, characters, scenes, dialogue, and ending.</div>
+    <div class="agent"><strong>3. Character Agent:</strong> Develops the characters and keeps their appearance consistent.</div>
+    <div class="agent"><strong>4. Storyboard Agent:</strong> Breaks the script into scenes and plans camera angles, lighting, and action.</div>
+    <div class="agent"><strong>5. Video Generation Agent:</strong> Turns scene descriptions into video clips using an AI video-generation platform.</div>
+    <div class="agent"><strong>6. Audio Agent:</strong> Plans voices, music, sound effects, and background sounds.</div>
+    <div class="agent"><strong>7. Editing Agent:</strong> Organizes clips, dialogue, music, transitions, and credits into the final movie.</div>
+
+    <h3>3. Movie Script</h3>
+    <p><strong>Title:</strong> One More Play</p>
+
+    <p><strong>Story Summary:</strong></p>
+    <p>
+        A high school football player named Marcus is struggling with pressure,
+        injuries, and doubts about his future. After a difficult practice,
+        he considers giving up. His coach reminds him that success is not
+        about never falling down. It is about choosing to get back up.
+        Marcus returns to practice, works with his teammates, and eventually
+        gets another opportunity to make a difference for his team.
+    </p>
+
+    <h3>Main Characters</h3>
+    <ul>
+        <li><strong>Marcus:</strong> A determined young football player who wants to prove himself.</li>
+        <li><strong>Coach Daniels:</strong> A supportive coach who teaches Marcus about discipline and perseverance.</li>
+        <li><strong>Jordan:</strong> Marcus's teammate and close friend who encourages him not to quit.</li>
+    </ul>
+
+    <h3>Scene 1 – The Pressure</h3>
+    <p>
+        Marcus sits alone in the locker room after a difficult practice.
+        He looks down at his football equipment and wonders if all the
+        hard work is worth it.
+    </p>
+    <p><strong>Marcus:</strong> "I don't know if I can keep doing this."</p>
+
+    <h3>Scene 2 – The Conversation</h3>
+    <p>
+        Coach Daniels walks into the locker room and notices Marcus sitting
+        by himself. He sits next to him and reminds him why he started playing.
+    </p>
+    <p><strong>Coach Daniels:</strong> "You think being strong means never struggling. It doesn't. It means getting back up when things get difficult."</p>
+
+    <h3>Scene 3 – The Work</h3>
+    <p>
+        Marcus returns to practice. He runs drills, works with his teammates,
+        and pushes through difficult moments. Jordan encourages him during
+        the workout.
+    </p>
+    <p><strong>Jordan:</strong> "Come on, we've got one more rep!"</p>
+    <p><strong>Marcus:</strong> "Let's get it done."</p>
+
+    <h3>Scene 4 – One More Play</h3>
+    <p>
+        During an important game, Marcus gets another opportunity.
+        The team lines up, the ball is snapped, and Marcus helps make
+        a crucial block that allows his teammate to score.
+    </p>
+    <p><strong>Coach Daniels:</strong> "That's what happens when you don't give up!"</p>
+
+    <h3>Ending</h3>
+    <p>
+        Marcus celebrates with his teammates. The movie ends with a message:
+        "Your biggest victories start when you decide not to quit."
+    </p>
+
+    <h3>4. Storyboard</h3>
+
+    <div class="scene">
+        <h3>Scene 1: The Pressure</h3>
+        <p><strong>Location:</strong> Football locker room</p>
+        <p><strong>Characters:</strong> Marcus</p>
+        <p><strong>Action:</strong> Marcus sits alone looking at his football gear.</p>
+        <p><strong>Camera Shot:</strong> Close-up of Marcus's face, followed by a wide locker-room shot.</p>
+        <p><strong>Lighting:</strong> Dim, dramatic lighting.</p>
+        <p><strong>Dialogue:</strong> "I don't know if I can keep doing this."</p>
+        <p><strong>Sound:</strong> Quiet room tone, distant footsteps, soft emotional music.</p>
+    </div>
+
+    <div class="scene">
+        <h3>Scene 2: The Conversation</h3>
+        <p><strong>Location:</strong> Locker room</p>
+        <p><strong>Characters:</strong> Marcus and Coach Daniels</p>
+        <p><strong>Action:</strong> Coach sits beside Marcus and gives him advice.</p>
+        <p><strong>Camera Shot:</strong> Medium two-person shot, then close-ups during dialogue.</p>
+        <p><strong>Lighting:</strong> Soft lighting focused on both characters.</p>
+        <p><strong>Dialogue:</strong> "It means getting back up when things get difficult."</p>
+        <p><strong>Sound:</strong> Quiet background music and locker-room ambience.</p>
+    </div>
+
+    <div class="scene">
+        <h3>Scene 3: The Work</h3>
+        <p><strong>Location:</strong> Football practice field</p>
+        <p><strong>Characters:</strong> Marcus and Jordan</p>
+        <p><strong>Action:</strong> Players run drills and practice together.</p>
+        <p><strong>Camera Shot:</strong> Wide field shots, tracking shots, and close-ups of players running.</p>
+        <p><strong>Lighting:</strong> Bright outdoor daylight.</p>
+        <p><strong>Dialogue:</strong> "Come on, we've got one more rep!"</p>
+        <p><strong>Sound:</strong> Whistle, footsteps, players shouting, and energetic music.</p>
+    </div>
+
+    <div class="scene">
+        <h3>Scene 4: One More Play</h3>
+        <p><strong>Location:</strong> Football stadium during a game</p>
+        <p><strong>Characters:</strong> Marcus, Jordan, Coach Daniels, and teammates</p>
+        <p><strong>Action:</strong> Marcus makes a crucial block during an important play.</p>
+        <p><strong>Camera Shot:</strong> Wide field shot followed by slow-motion action and celebration close-ups.</p>
+        <p><strong>Lighting:</strong> Bright stadium lights.</p>
+        <p><strong>Dialogue:</strong> "That's what happens when you don't give up!"</p>
+        <p><strong>Sound:</strong> Crowd cheering, whistle, pads colliding, and inspirational music.</p>
+    </div>
+
+    <h3>5. AI Video Generation Prompts</h3>
+    <p>
+        The following prompts can be entered into an AI video-generation
+        platform such as Google Veo, Runway, or Kling. Each clip should
+        maintain consistent characters and a realistic sports-drama style.
+    </p>
+
+    <h3>Scene 1 Prompt</h3>
+    <pre>A cinematic realistic sports drama scene inside a high school football locker room. A young football player named Marcus sits alone on a bench looking down at his football equipment. He looks disappointed and tired after a difficult practice. Slow camera push-in, dramatic low lighting, emotional atmosphere, realistic facial expressions, cinematic film quality.</pre>
+
+    <h3>Scene 2 Prompt</h3>
+    <pre>A realistic cinematic scene in a football locker room. An experienced football coach sits beside a young player and gives him encouraging advice. The player listens carefully. Medium camera shot followed by close-ups, natural body language, warm dramatic lighting, emotional sports movie atmosphere.</pre>
+
+    <h3>Scene 3 Prompt</h3>
+    <pre>A cinematic high school football practice montage. Young football players run drills on a field, practice blocking, and encourage each other. A determined player pushes himself through training. Dynamic tracking camera movements, bright daylight, realistic football uniforms, energetic inspirational sports movie style.</pre>
+
+    <h3>Scene 4 Prompt</h3>
+    <pre>A dramatic American football game in a packed high school stadium at night. A young offensive lineman makes a powerful block to help his teammate score. Slow motion action, bright stadium lights, excited crowd, teammates celebrating together, cinematic camera movement, realistic football action, inspirational ending.</pre>
+
+    <h3>6. Audio Plan</h3>
+    <ul>
+        <li><strong>Voices:</strong> Marcus, Coach Daniels, and Jordan will have separate dialogue voices.</li>
+        <li><strong>Background Music:</strong> Emotional music during the opening and inspirational music during the training and final game.</li>
+        <li><strong>Sound Effects:</strong> Football whistle, footsteps, pads colliding, and crowd cheering.</li>
+        <li><strong>Environmental Sounds:</strong> Locker-room ambience, outdoor wind, practice-field sounds, and stadium noise.</li>
+    </ul>
+
+    <h3>Audio Generation Prompt</h3>
+    <pre>Create audio for a realistic inspirational football short film. Use natural conversational voices for a young football player, his teammate, and an experienced coach. Begin with quiet emotional background music. Add realistic locker-room ambience, football practice sounds, whistles, footsteps, helmet and shoulder-pad impacts, and stadium crowd cheering. Build into uplifting cinematic music during the final scene.</pre>
+
+    <h3>7. Movie Editing Plan</h3>
+    <ol>
+        <li>Import the generated video clips into a video editor.</li>
+        <li>Arrange the scenes in the correct story order.</li>
+        <li>Add dialogue and narration where needed.</li>
+        <li>Include background music and realistic sound effects.</li>
+        <li>Use transitions between scenes.</li>
+        <li>Add the movie title at the beginning.</li>
+        <li>End with the message: "Your biggest victories start when you decide not to quit."</li>
+        <li>Add credits at the end.</li>
+        <li>Export the final movie as an MP4 video.</li>
+    </ol>
+
+    <h3>8. Final Movie Submission</h3>
+    <p>
+        The final movie will combine the generated scenes, dialogue,
+        music, sound effects, and transitions into one short film.
+        The target length is approximately 3–5 minutes.
+    </p>
+
+    <p class="note">
+        Submission status: The movie still needs to be generated, edited,
+        and uploaded. The prompts and production plan above are prepared
+        for that process.
+    </p>
+
+    <p><strong>Final Movie Link:</strong> Add your Google Drive or YouTube link here after uploading the completed movie.</p>
+
+    <h3>Conclusion</h3>
+    <p>
+        This project demonstrates how an AI Agent workflow can take a
+        simple idea and organize it into a movie-production process.
+        Each stage has a different responsibility, from writing the
+        script to creating video clips and editing the final product.
+        Using AI tools can make creative projects easier to plan and
+        produce while still requiring human decisions and editing.
+    </p>
+
+    <p><a href="#home">Back to top ↑</a></p>
+</section>
+
+</main>
+
+<footer>
+    <p>College Technology Projects | Hardware Evaluation & AI Movie Agent</p>
+</footer>
+
+</body>
+</html>
